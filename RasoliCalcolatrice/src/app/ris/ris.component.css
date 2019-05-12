@@ -1,0 +1,14 @@
+ul
+{
+    list-style-type: none;
+}
+button
+{
+    margin: 10px;
+}
+.ng-valid:not(form) {
+    border-left: 5px solid #42A948; 
+  }
+  .ng-invalid:not(form)  {
+    border-left: 5px solid #a94442; 
+  }

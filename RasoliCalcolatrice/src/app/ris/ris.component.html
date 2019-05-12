@@ -1,0 +1,9 @@
+<h4>Risultato: {{numeri[2]}}</h4>
+<ul>
+  <li >{{daA()}}</li>
+</ul>
+<button class="btn btn-info" (click)="visONo()">Mostra/Nascondi email</button>
+<form class="form-group" [formGroup]="mf"  *ngIf="vis">
+  <input [formControl]="mf.controls['email']" class="form-control" type="email" #n>
+  <button class="btn btn-info" (click)="sendEmail(n)">Invia email</button>
+</form>

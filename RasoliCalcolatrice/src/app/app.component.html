@@ -1,0 +1,11 @@
+<div class="form-group col-sm-6 d-block mx-auto"> 
+  <form [formGroup]="form">
+    <p>Primo numero:</p><input  class="form-control" type="number" [formControl]="form.controls['p']">
+    <p>Secondo numero:</p><input class="form-control" type="number" [formControl]="form.controls['s']">
+    <button class="btn btn-info" (click)="somma()">+</button>
+    <button class="btn btn-info" (click)="sottrazione()">-</button>
+    <button class="btn btn-info" (click)="moltiplicazione()"> x</button>
+    <button class="btn btn-info" (click)="divisione()">/</button>
+  </form>
+  <app-ris [numeri]="numeri" *ngIf="numeri"></app-ris>
+</div>
